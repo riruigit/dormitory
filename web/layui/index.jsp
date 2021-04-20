@@ -60,17 +60,8 @@
                     <a href="javascript:;" data-check-screen="full"><i class="fa fa-arrows-alt"></i></a>
                 </li>
                 <li class="layui-nav-item layuimini-setting">
-                    <a href="javascript:;">admin</a>
+                    <a href="javascript:;">my</a>
                     <dl class="layui-nav-child">
-                        <dd>
-                            <a href="javascript:;" layuimini-content-href="page/user-setting.html" data-title="基本资料" data-icon="fa fa-gears">基本资料<span class="layui-badge-dot"></span></a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;" layuimini-content-href="page/user-password.html" data-title="修改密码" data-icon="fa fa-gears">修改密码</a>
-                        </dd>
-                        <dd>
-                            <hr>
-                        </dd>
                         <dd>
                             <a href="javascript:;" class="login-out">退出登录</a>
                         </dd>
@@ -145,7 +136,7 @@
             menuChildOpen: false,       // 是否默认展开菜单
             loadingTime: 0,             // 初始化加载时间
             pageAnim: true,             // iframe窗口动画
-            maxTabNum: 15,              // 最大的tab打开数量
+            maxTabNum: 20,              // 最大的tab打开数量
         };
         miniAdmin.render(options);
 

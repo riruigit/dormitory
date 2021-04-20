@@ -105,7 +105,7 @@
                         console.log(res)
                         if (res === "已发送保修请求") {
                             layer.msg("已发送保修请求", {time: 2000}, function () {
-                                location.reload()
+                               location.reload()
                             })
                         }
                     }

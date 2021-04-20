@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>宿舍保修</title>
     <meta name="renderer" content="webkit">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../lib/layui-v2.6.3/css/layui.css" media="all">
@@ -20,6 +21,16 @@
     </div>
 </div>
 <script src="../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+
+<script language=JavaScript>
+    $(document).ready(function () {
+        if(location.href.indexOf("#reloaded")===-1){
+            location.href=location.href+"#reloaded";
+            location.reload();
+        }
+    })
+</script>
+
 <script>
     layui.use(['form', 'table'], function () {
         var $ = layui.jquery,
@@ -42,6 +53,7 @@
             page: false,
             skin: 'line'
         });
+        table.reload()
     });
 </script>
 </body>
