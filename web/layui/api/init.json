@@ -1,0 +1,127 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/welcome.jsp"
+  },
+  "logoInfo": {
+    "title": "宿舍管理系统",
+    "image": "images/xiaohuitu.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "学生",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "查看公告",
+          "href": "/studentAllNotice",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "宿舍保修",
+          "href": "/studentAddGuarantee",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "保修进度",
+          "href": "/studentLookGuarantee",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "取水预约",
+          "href": "/studentAddWater",
+          "icon": "fa fa-window-maximize",
+          "target": "_self"
+        },
+        {
+          "title": "信息反馈",
+          "href": "/studentAddFeedBack",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "反馈查询",
+          "href": "/seeFeedBack",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        }
+      ]
+    },
+    {
+      "title": "楼管",
+      "icon": "fa fa-lemon-o",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "查看公告",
+          "href": "/louguanAllNotice",
+          "icon": "fa fa-dot-circle-o",
+          "target": "_self"
+        },
+        {
+          "title": "编辑公告",
+          "href": "/louGuanEditNotice",
+          "icon": "fa fa-dot-circle-o",
+          "target": "_self"
+        },
+        {
+          "title": "回复保修",
+          "href": "/louGuanEditGuarantee",
+          "icon": "fa fa-adn",
+          "target": "_self"
+        },
+        {
+          "title": "查看取水",
+          "href": "/louGuanAddWater",
+          "icon": "fa fa-dashboard",
+          "target": "_self"
+        },
+        {
+          "title": "回复反馈",
+          "href": "/louGuanFeedBack",
+          "icon": "fa fa-angle-double-down",
+          "target": "_self"
+        }
+      ]
+    },
+    {
+      "title": "管理员",
+      "icon": "fa fa-slideshare",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "查看公告",
+          "href": "/adminAllNotice",
+          "icon": "fa fa-meetup",
+          "target": "_self"
+        },
+        {
+          "title": "查看保修",
+          "href": "/adminGuarantee",
+          "icon": "fa fa-superpowers",
+          "target": "_self"
+        },
+        {
+          "title": "查看取水",
+          "href": "/adminWater",
+          "icon": "fa fa-superpowers",
+          "target": "_self"
+        },
+        {
+          "title": "查看反馈",
+          "href": "/adminFeedBack",
+          "icon": "fa fa-superpowers",
+          "target": "_self"
+        }
+      ]
+    }
+  ]
+}

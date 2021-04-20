@@ -1,0 +1,95 @@
+学生表的创建
+
+对应的字段：学号 名字 密码 身份 苑区 宿舍号 院系 班级 性别 联系方式
+（因为有一个登录页面，所以添加了以下的字段：密码，身份identity，其中身份使用0代表学生，1代表楼管，2代表管理员。）
+
+
+DROP TABLE IF EXISTS dorstudent;
+CREATE TABLE dorstudent(
+id varchar(20) PRIMARY KEY,
+name varchar(20) NOT NULL,
+password varchar(20) NOT NULL,
+identity int NOT NULL,
+courtyard varchar(20),
+dormitoryid varchar(20),
+department varchar(20),
+classroom varchar(20),
+gender varchar(20),
+phone int(20)
+)
+
+
+
+管理员表的创建
+
+DROP TABLE IF EXISTS doradmin;
+CREATE TABLE doradmin(
+id varchar(20) PRIMARY KEY,
+name varchar(20) NOT NULL,
+password varchar(20) NOT NULL,
+identity varchar(20) NOT NULL,
+gender varchar(20) NOT NULL,
+phone varchar(20) NOT NULL
+)
+
+
+
+楼管的创建
+DROP TABLE IF EXISTS dorlouguan;
+CREATE TABLE dorlouguan(
+id varchar(20) PRIMARY KEY,
+name varchar(20) NOT NULL,
+password varchar(20) NOT NULL,
+identity varchar(20) NOT NULL,
+gender varchar(20) NOT NULL,
+phone varchar(20) NOT NULL
+)
+
+
+宿舍公告的创建
+
+DROP TABLE IF EXISTS dornotice;
+CREATE TABLE dornotice(
+time varchar(20) NOT NULL,
+theme varchar(20) NOT NULL,
+content varchar(20) NOT NULL,
+author varchar(20)  NOT NULL ,
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY
+)
+
+
+
+宿舍保修单的创建
+
+DROP TABLE IF EXISTS dorguarantee;
+CREATE TABLE dorguarantee(
+time varchar(20) NOT NULL,
+dormitoryid varchar(20) NOT NULL,
+content varchar(20) NOT NULL,
+result varchar(20) NOT NULL,
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY
+)
+
+
+宿舍取水单的创建
+
+DROP TABLE IF EXISTS dorwater;
+CREATE TABLE dorwater(
+time varchar(20) NOT NULL,
+dormitoryid varchar(20) NOT NULL,
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY
+)
+
+
+信息反馈单
+DROP TABLE IF EXISTS dorfeedback;
+CREATE TABLE dorfeedback(
+ dormitoryid varchar(20) NOT NULL,
+ applicant varchar(20) NOT NULL,
+ content varchar(20) NOT NULL,
+ phone varchar(20) NOT NULL,
+ time varchar(20) NOT NULL,
+ id int NOT NULL AUTO_INCREMENT PRIMARY KEY
+)
+
+

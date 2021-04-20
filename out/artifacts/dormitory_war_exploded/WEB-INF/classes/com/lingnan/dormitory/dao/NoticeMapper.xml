@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dormitory.dao.NoticeMapper">
+
+    <select id="noticeList" resultType="com.lingnan.dormitory.pojo.Dornotice">
+        select * from dornotice limit 0, 5
+    </select>
+
+    <select id="noteAllList" resultType="com.lingnan.dormitory.pojo.Dornotice">
+        select * from dornotice
+    </select>
+
+
+    <insert id="addNotice" parameterType="com.lingnan.dormitory.pojo.Dornotice" >
+        insert into dornotice (time,theme,content,author)
+            value (#{time},#{theme},#{content},#{author})
+    </insert>
+
+</mapper>

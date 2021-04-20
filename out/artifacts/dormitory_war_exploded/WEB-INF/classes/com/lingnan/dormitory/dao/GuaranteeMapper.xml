@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dormitory.dao.GuaranteeMapper">
+
+    <insert id="addguarantee" parameterType="com.lingnan.dormitory.pojo.Dorguarantee">
+        insert into dorguarantee (studentid, dormitoryid, content, time)
+            value (#{studentid},#{dormitoryid},#{content},#{time})
+    </insert>
+
+
+    <select id="selectAll" resultType="com.lingnan.dormitory.pojo.Dorguarantee">
+        select *
+        from dorguarantee
+    </select>
+
+    <insert id="update" parameterType="com.lingnan.dormitory.pojo.Dorguarantee" >
+        update dorguarantee
+        set dormitoryid=#{dormitoryid},
+            content=#{content},
+            time=#{time},
+            result=#{result},
+            studentid=#{studentid}
+        where id = #{id}
+    </insert>
+
+
+    <select id="select" resultType="com.lingnan.dormitory.pojo.Dorguarantee"
+            parameterType="com.lingnan.dormitory.pojo.Dorguarantee">
+        select *
+        from dorguarantee
+        where studentid ={studentid}
+    </select>
+
+</mapper>
