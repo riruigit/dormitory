@@ -12,7 +12,8 @@
 
     <select id="selectAll" resultType="com.lingnan.dormitory.pojo.Dorfeedback">
         select *
-        from dorfeedback;
+        from dorfeedback ORDER BY time DESC
+
     </select>
 
     <update id="update" parameterType="com.lingnan.dormitory.pojo.Dorfeedback">
