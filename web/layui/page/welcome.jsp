@@ -304,8 +304,7 @@
             <div class="layui-col-md4">
 
                 <div class="layui-card">
-                    <div class="layui-card-header"><i class="fa fa-bullhorn icon icon-tip"></i>宿舍公告<a
-                            style="float: right;" href="./allnotice.jsp">更多公告</a></div>
+                    <div class="layui-card-header"><i class="fa fa-bullhorn icon icon-tip"></i>宿舍公告</div>
                     <div class="layui-card-body layui-text">
 
                         <% List<Dornotice> notelist = (List<Dornotice>) request.getSession().getAttribute("notelist");

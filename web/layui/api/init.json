@@ -22,16 +22,24 @@
           "target": "_self"
         },
         {
-          "title": "宿舍保修",
-          "href": "/studentAddGuarantee",
+          "title": "宿舍报修",
+          "href": "",
           "icon": "fa fa-home",
-          "target": "_self"
-        },
-        {
-          "title": "保修进度",
-          "href": "/studentLookGuarantee",
-          "icon": "fa fa-home",
-          "target": "_self"
+          "target": "_self",
+          "child": [
+            {
+              "title": "申请报修",
+              "href": "/studentAddGuarantee",
+              "icon": "fa fa-meetup",
+              "target": "_self"
+            },
+            {
+              "title": "报修进度",
+              "href": "/studentLookGuarantee",
+              "icon": "fa fa-superpowers",
+              "target": "_self"
+            }
+          ]
         },
         {
           "title": "取水预约",
@@ -41,18 +49,29 @@
         },
         {
           "title": "信息反馈",
-          "href": "/studentAddFeedBack",
+          "href": "",
           "icon": "fa fa-gears",
-          "target": "_self"
-        },
-        {
-          "title": "反馈查询",
-          "href": "/seeFeedBack",
-          "icon": "fa fa-gears",
-          "target": "_self"
+          "target": "_self",
+          "child": [
+            {
+              "title": "提交反馈",
+              "href": "/studentAddFeedBack",
+              "icon": "fa fa-fire-extinguisher",
+              "target": "_self"
+            },
+            {
+              "title": "查看回复",
+              "href": "/seeFeedBack",
+              "icon": "fa fa-suitcase",
+              "target": "_self"
+            }
+          ]
         }
       ]
     },
+
+
+
     {
       "title": "楼管",
       "icon": "fa fa-lemon-o",
@@ -72,7 +91,7 @@
           "target": "_self"
         },
         {
-          "title": "回复保修",
+          "title": "回复报修",
           "href": "/louGuanEditGuarantee",
           "icon": "fa fa-adn",
           "target": "_self"
@@ -104,7 +123,7 @@
           "target": "_self"
         },
         {
-          "title": "查看保修",
+          "title": "查看报修",
           "href": "/adminGuarantee",
           "icon": "fa fa-superpowers",
           "target": "_self"
@@ -112,13 +131,13 @@
         {
           "title": "查看取水",
           "href": "/adminWater",
-          "icon": "fa fa-superpowers",
+          "icon": "fa fa-pied-piper",
           "target": "_self"
         },
         {
           "title": "查看反馈",
           "href": "/adminFeedBack",
-          "icon": "fa fa-superpowers",
+          "icon": "fa fa-ship",
           "target": "_self"
         }
       ]

@@ -331,13 +331,13 @@
                 </div>
 
             </div>
-            <div class="tip">
+<%--            <div class="tip">--%>
 
-                <span class="login-tip" style="color: #1391ff ">注册账号</span>
-                <a href="javascript:" class="forget-password">忘记密码</a>
-                <!--                <a style="position: absolute;right: 130px;color: #1391ff" href="https://www.baidu.com">注册账号</a>-->
-                <!--                这个在一个div中的位置div右边130px的位置-->
-            </div>
+<%--                <span class="login-tip" style="color: #1391ff ">注册账号</span>--%>
+<%--                <a href="javascript:" class="forget-password">忘记密码</a>--%>
+<%--                <!--                <a style="position: absolute;right: 130px;color: #1391ff" href="https://www.baidu.com">注册账号</a>-->--%>
+<%--                <!--                这个在一个div中的位置div右边130px的位置-->--%>
+<%--            </div>--%>
             <div class="layui-form-item" style="text-align:center; width:100%;height:100%;margin:0px;">
                 <button class="login-btn" lay-submit="login" lay-filter="login">立即登录</button>
             </div>

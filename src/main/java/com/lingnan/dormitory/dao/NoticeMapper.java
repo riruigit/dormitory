@@ -23,4 +23,5 @@ public interface NoticeMapper {
 
 
     int addNotice(Dornotice dornotice);
+
 }

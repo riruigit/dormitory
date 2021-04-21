@@ -39,7 +39,7 @@
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">内容</label>
         <div class="layui-input-block">
-            <textarea name="content" class="layui-textarea" placeholder="简单描述需要保修的地方" autocomplete="off"></textarea>
+            <textarea name="content" class="layui-textarea" placeholder="简单描述需要报修的地方" autocomplete="off"></textarea>
         </div>
     </div>
     <div class="layui-form-item">
@@ -104,7 +104,7 @@
                     success: function (res) {
                         console.log(res)
                         if (res === "已发送保修请求") {
-                            layer.msg("已发送保修请求", {time: 2000}, function () {
+                            layer.msg("已发送报修请求", {time: 2000}, function () {
                                location.reload()
                             })
                         }

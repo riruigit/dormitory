@@ -31,9 +31,9 @@
             cellMinWidth: 80,
             defaultToolbar: ['filter', 'exports', 'print'],
             cols: [[
-                {field: 'id', title: 'id', sort: true},
+                // {field: 'id', title: 'id', sort: true},
                 {field: 'time', title: '时间', sort: true},
-                {field: 'dormitoryid', title: '内容'}
+                {field: 'dormitoryid', title: '宿舍号'}
             ]],
             limits: [10, 15, 20, 25, 50, 100],
             limit: 15,

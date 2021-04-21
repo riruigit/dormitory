@@ -6,7 +6,7 @@
 <mapper namespace="com.lingnan.dormitory.dao.NoticeMapper">
 
     <select id="noticeList" resultType="com.lingnan.dormitory.pojo.Dornotice">
-        select * from dornotice limit 0, 5
+        select * from dornotice order by id desc limit  5
     </select>
 
     <select id="noteAllList" resultType="com.lingnan.dormitory.pojo.Dornotice">
@@ -18,5 +18,7 @@
         insert into dornotice (time,theme,content,author)
             value (#{time},#{theme},#{content},#{author})
     </insert>
+
+
 
 </mapper>

@@ -32,7 +32,7 @@
             toolbar: '#toolbarDemo',
             defaultToolbar: ['filter', 'exports', 'print'],
             cols: [[
-                {field: 'id', width: 180, title: '编号', sort: true},
+                // {field: 'id', width: 180, title: '编号', sort: true},
                 {field: 'dormitoryid', width: 180, title: '宿舍号'},
                 {field: 'time', width: 180, title: '时间', sort: true},
                 {field: 'applicant', width: 180, title: '申请人'},
