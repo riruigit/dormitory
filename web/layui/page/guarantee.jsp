@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>layui</title>
+    <title>宿舍报修</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -35,7 +35,7 @@
                 {field: 'id', width: 180, title: '编号', sort: true},
                 {field: 'time', width: 180, title: '时间', sort: true},
                 {field: 'dormitoryid', width: 180, title: '宿舍号'},
-                {field: 'content', width: 180, title: '内容'},
+                {field: 'content', width: 180, title: '报修内容'},
                 {field: 'result', width: 180, title: '请填入反馈' ,edit: 'text'}
             ]],
             limits: [10, 15, 20, 25, 50, 100],
@@ -65,8 +65,8 @@
                 dataType: 'text',
                 success: function (res) {
                     console.log(res)
-                    if (res === "已更新保修进度") {
-                        layer.msg('保修结果 ' + ' 更新为：'+ value);
+                    if (res === "已更新报修进度") {
+                        layer.msg('报修结果 ' + ' 更新为：'+ value);
                     }
                 }
             })

@@ -37,7 +37,7 @@
                 {field: 'time', width: 180, title: '时间', sort: true},
                 {field: 'applicant', width: 180, title: '申请人'},
                 {field: 'phone', width: 180, title: '手机号码'},
-                {field: 'content', width: 180, title: '内容'},
+                {field: 'content', width: 180, title: '反馈内容'},
                 {field: 'result', width: 180, title: '请填入反馈' ,edit: 'text'}
             ]],
             limits: [10, 15, 20, 25, 50, 100],
