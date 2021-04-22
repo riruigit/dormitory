@@ -10,7 +10,7 @@
     </select>
 
     <select id="noteAllList" resultType="com.lingnan.dormitory.pojo.Dornotice">
-        select * from dornotice
+        select * from dornotice ORDER BY time DESC
     </select>
 
 

@@ -13,7 +13,7 @@
 
     <select id="selectAll" resultType="com.lingnan.dormitory.pojo.Dorguarantee">
         select *
-        from dorguarantee
+        from dorguarantee ORDER BY time DESC
     </select>
 
     <insert id="update" parameterType="com.lingnan.dormitory.pojo.Dorguarantee" >
@@ -31,7 +31,7 @@
             parameterType="com.lingnan.dormitory.pojo.Dorguarantee">
         select *
         from dorguarantee
-        where studentid ={studentid}
+        where studentid ={studentid} ORDER BY time DESC
     </select>
 
 </mapper>
